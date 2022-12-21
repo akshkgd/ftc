@@ -1,13 +1,671 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    overflow-x:hidden !important;
+    background-color: rgb(0, 0, 0) !important; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar CSS Style Start */
+
+
+@media (min-width: 991px) {
+    .logo {
+      width: 5%;
+      margin-right:10px;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .logo {
+      width: 10%;
+    }
+  }
+  
+  @media (max-width: 470px) {
+    .logo {
+      width: 15%;
+      margin-right:20px;
+    }
+  }
+
+  .navbar-brand , .nav-bar ,.nav-link
+{
+    color:blueviolet !important;
+    background-color: black !important;
 }
+
+.front-page
+{
+  background-color:black;
+  background-image: url(https://meeting-app-iota.vercel.app/static/media/lines.b4d5a57702032e364b8a.svg);
+  background-size: cover;
+  width:100vw;
+  height:100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width:576px)
+{
+  .front-page{
+    background-color: rgb(3,3,3);
+  }
+}
+
+
+.front-div
+{
+    padding-top:40vh;
+    color:blueviolet;
+    padding-right: 12px !important;
+    padding-left: 40px !important;
+}
+
+
+.page-link{
+  text-decoration: none;
+  color:blueviolet;
+}
+
+
+.register-btn
+{
+    padding:8px 32px;
+    border:none;
+    border-radius:7px;
+    cursor:pointer;
+    color:white;
+    background-color: blueviolet;
+    font-size:17px;
+    text-shadow: 3px 3px 7px black;
+}
+
+.register-btn:hover
+{
+  color:white;
+  border:1px solid blueviolet;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+
+/* Navbar hamburger Css Start */
+
+
+ /* Remove border from toggler */
+ .navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+  width: 30px;
+  height: 3px;
+  background-color: blueviolet;
+  display: block;
+  transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+  margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: blueviolet;
+}
+
+
+/* Navbar Hamburger Css End */
+
+/* Navbar CSS Style End */
+
+/* Benefit session css start */
+
+@media only screen and (min-width:577px)
+{
+  .benefit-row-div
+  {
+    padding-left:40px !important;
+  }
+}
+
+@media only screen and (max-width:576px)
+{
+  .benefit-row-div
+  {
+    padding-left:8px !important;
+  }
+}
+
+.benefit-text
+{
+  font-size: 8vh;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color:blueviolet;
+}
+
+.benefits
+{
+  font-weight:300;
+  letter-spacing: 1px;
+}
+
+i{
+  font-style: normal !important;
+}
+
+.benefit-span
+{
+  color:blueviolet;
+  font-size: 30px;
+  padding-top: 2px !important;
+}
+/* Benefit session css end */
+
+/* Start of Technology session CSS */
+
+.technology-head
+{
+  color:blueviolet;
+  text-align: center;
+  padding:32px auto;
+}
+
+.tech-text
+{
+  padding-top:32px;
+  padding-bottom: 20px;
+  font-size:5vh;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width:767px)
+{
+  .tech-text
+  {
+    font-size:7vh;
+  }
+}
+
+.technology-parent
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.technology-child
+{
+  width:300px;
+  border-radius: 12px;
+  height:auto;
+  box-sizing: border-box;
+  margin:10px;
+  -webkit-box-shadow:0px 0px 15px blueviolet;
+  box-shadow:0px 0px 15px blueviolet;
+  overflow:hidden !important;
+
+}
+
+.image-div
+{
+  width:300px;
+  height:250px;
+  box-sizing: border-box;
+  overflow:hidden !important;
+  padding:0px 0px 10px 0px;
+}
+
+.image
+{
+  width:100%;
+  height:100%;
+  border-radius: 12px;
+  /* object-fit: cover; */
+}
+
+.image:hover{
+  -webkit-transform: scale(1.1);
+  transform:scale(1.1);
+  -webkit-transition:2s ease-in-out;
+  transition:2s ease-in-out;
+}
+
+.road-map-btn
+{
+  padding:12px 25px;
+  border:1px solid blueviolet;
+  color:blueviolet;
+  background-color: black;
+  font-size:15px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin:10px 5px 20px 25%;
+  box-sizing: border-box;
+}
+/* End of Technology session CSS */
+
+/* Start of QNA Session CSS*/
+
+.qna-text
+{
+  margin:10px auto;
+  text-align: center;
+  font-size: 5vh;
+  font-weight:400;
+  color:blueviolet;
+  padding-top:20px;
+  /* padding-bottom: 10px; */
+}
+
+.main-qna-div
+{
+  background-color: white;
+}
+.qna-parent
+{
+  width:80vw;
+  background-color: white;
+  padding:20px 0px 40px 0px;
+  margin:10px auto 0 auto;
+  /* border:1px solid blueviolet; */
+}
+
+@media only screen and (max-width:500px)
+{
+  .qna-parent{
+    width:90vw;
+  }
+}
+
+.accordion-button:not(.collapsed)
+{
+  color:blueviolet !important;
+  background-color:rgb(255, 255, 255) !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: blueviolet !important;
+}
+
+accordion-button:not(.collapsed)::after 
+{
+  /* background-image: none !important; */
+  color:blueviolet !important;
+}
+
+.accordion-button:focus{
+  color:blueviolet !important;
+}
+
+/* End of QNA Session CSS */
+
+/* Start of Footer CSS */
+
+.main-footer-div
+{
+  padding:30px 0px 10px 0px;
+  width:100vw;
+}
+
+
+.logo-class
+{
+  width:150px;
+  margin:20px auto 0px auto;
+}
+
+.logo-footer
+{
+  width:100%;
+}
+
+.footer-tagline
+{
+  text-align: center;
+  color:blueviolet;
+}
+
+.footer-links
+{
+  color:white;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width:767px)
+{
+  .footer-links
+  {
+    opacity: 1;
+  }
+}
+
+.footer-links:hover{
+  color:white;
+  opacity: 1.0;
+}
+
+.icon-footer
+{
+  color:rgb(255, 255, 255);
+  text-align: center;
+  cursor:pointer;
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.copyright
+{
+  text-align: center;
+  color:white;
+  margin-top:30px;
+  padding:5px;
+}
+
+.company-name-footer
+{
+  color:blueviolet;
+}
+/* End of Footer CSS */
+
+/* Html Syllabus CSS Start */
+
+.Main-Parent-Div
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20vh auto 10vh auto;
+  align-items: center;
+}
+
+.html-div
+{
+  width:300px;
+  height:auto;
+  box-sizing: border-box;
+  border:1px solid blueviolet;
+  padding:10px 10px 20px 10px;
+  margin:10px auto;
+  flex-wrap: wrap;
+  border-radius:12px;
+  color:white;
+}
+
+.syllabusImage
+{
+  width:280px;
+  height:200px;
+  box-sizing: border-box;
+}
+
+
+.imgSyllabus
+{
+  width:100%;
+  height:100%;
+  border-radius:12px;
+}
+
+.bonus-gift-text
+{
+  cursor:pointer;
+}
+
+
+/* Html Syllabus CSS End */
+
+/* Form CSS Start */
+.form-control:focus
+{
+  outline:none !important;
+  border:3px solid blueviolet !important;
+  box-shadow:none !important;
+  box-shadow: 3px 3px 5px blueviolet;
+}
+
+.buy-form
+{
+  border:1px solid blueviolet;
+  border-radius: 19px;
+}
+
+.payment-btn
+{
+  padding:8px 24px;
+  background-color: blueviolet;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  border:none;
+  border-radius: 8px;
+}
+/* Form CSS End */
+
+/* Structure CSS Start */
+.show-detail
+{
+  margin:20px auto;
+  padding:10px 20px;
+  border: 1px solid blueviolet;
+  width:30vw;
+  color:white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:767px)
+{
+  .show-detail{
+  padding:10px 10px !important;
+  width:90vw;
+  }
+}
+
+.structure-display
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.show-detail p{
+   font-size: 18px;
+}
+
+.x-schedule
+{
+  text-align: center;
+  font-size:5vh;
+  color:blueviolet;
+  margin-top:20vh;
+}
+
+/* animation css laoding */
+.center {
+  height: 58vh;
+  display: flex;
+  justify-content: center;
+  margin-top:20vh;
+  /* align-items: center; */
+  background: #000;
+}
+
+.d-none
+{
+  display: none;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, blueviolet);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+ /* animation end */
+
+
+ /* Structure CSS END */
+
+
+ /* Bonus css start */
+
+.gift-box
+{
+  animation-name: animate;
+  animation-duration:4s;
+  animation-timing-function: ease-in-out;
+  /* animation-delay:1s; */
+}
+
+.gift-box2
+{
+  animation-name: animate2;
+  animation-duration:4s;
+  animation-timing-function: ease-in-out;
+  /* animation-delay:1s; */
+  opacity: 0;
+}
+
+@keyframes animate {
+  10%{transform:rotate(-10deg)}
+  20%{transform:rotate(10deg)}
+  30%{transform:rotate(-10deg)}
+  40%{transform:rotate(10deg)}
+  50%{transform:rotate(-10deg)}
+  60%{transform:rotate(10deg)}
+  70%{transform:rotate(-10deg)}
+  80%{transform:rotate(10deg)}
+  90%{transform:rotate(-10deg)}
+}
+ 
+@keyframes animate2{
+  10%{opacity:0.2}
+  20%{opacity:0.5}
+  30%{opacity:1}
+  40%{opacity:0.8}
+  50%{opacity:0.5}
+  60%{opacity:0.8}
+  70%{opacity:1}
+  80%{opacity:0.8}
+  90%{opacity:0.5}
+  100%{opacity:0}
+}
+
+.bonus-parent
+{
+  border:1px solid blueviolet;
+  width:29vw;
+  display: flex;
+  justify-content: center;
+  margin:30vh auto;
+  align-items: center;
+}
+
+@media only screen and (max-width:500px)
+{
+  .bonus-parent{
+    width:80vw;
+  }
+}
+
+@media only screen and (min-width:501px)  and (max-width:1000px)
+{
+  .bonus-parent{
+    width:50vw;
+  }
+}
+ /* Bonus css end */
+
+
+
+
+
+
+
